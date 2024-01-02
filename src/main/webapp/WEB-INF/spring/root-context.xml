@@ -18,9 +18,12 @@
      디비연결 객체생성	 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://itwillbs-rds-class1-team3.cwyqfeylunq5.ap-northeast-2.rds.amazonaws.com:3306/keypoint?useSSL=false&amp;serverTimezone=Asia/Seoul"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/2ndProject?serverTimezone=Asia/Seoul"></property>
+<!-- 	서버가 닫혀서 로컬디비로 다시연결하기 위해 주석처리함
+		<property name="url" value="jdbc:mysql://itwillbs-rds-class1-team3.cwyqfeylunq5.ap-northeast-2.rds.amazonaws.com:3306/keypoint?useSSL=false&amp;serverTimezone=Asia/Seoul"></property> -->
 		<property name="username" value="root"></property>
-		<property name="password" value="class10420"></property>
+		<property name="password" value="1234"></property>
+<!-- 		<property name="password" value="class10420"></property> -->
 	</bean>
 	
 	
